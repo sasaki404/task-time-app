@@ -10,7 +10,7 @@ export const App = () => {
     return (
         <Box>
             <Container maxWidth='xs'>
-                <h1>作業記録</h1>
+                <h1>作業時間記録</h1>
             </Container>
             <TodoForm todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} typeList={typeList} setTypeList={setTypeList} />
             <TodoList todoList={todoList} setTodoList={setTodoList} typeList={typeList} setTypeList={setTypeList} />
