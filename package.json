@@ -2,7 +2,12 @@
   "name": "nipo-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sasaki404.github.io/task-time-app/",
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.1",
+    "@mui/material": "^5.15.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -11,8 +16,10 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",
+    "react-confirm-alert": "^3.0.6",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-timer-hook": "^3.0.7",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +27,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "rm": "rm -rf docs",
+    "mv": "mv build docs",
+    "git": "git add . && git commit -m \"first commit\" && git push origin master",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
   },
   "eslintConfig": {
     "extends": [
