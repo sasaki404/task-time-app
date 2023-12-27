@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/task-time-app/static/css/main.41750fce.css",
-    "main.js": "/task-time-app/static/js/main.b9c46fe9.js",
+    "main.js": "/task-time-app/static/js/main.208597da.js",
     "static/js/787.e7678880.chunk.js": "/task-time-app/static/js/787.e7678880.chunk.js",
     "index.html": "/task-time-app/index.html",
     "main.41750fce.css.map": "/task-time-app/static/css/main.41750fce.css.map",
-    "main.b9c46fe9.js.map": "/task-time-app/static/js/main.b9c46fe9.js.map",
+    "main.208597da.js.map": "/task-time-app/static/js/main.208597da.js.map",
     "787.e7678880.chunk.js.map": "/task-time-app/static/js/787.e7678880.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41750fce.css",
-    "static/js/main.b9c46fe9.js"
+    "static/js/main.208597da.js"
   ]
 }
