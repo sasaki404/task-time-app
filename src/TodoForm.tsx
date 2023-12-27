@@ -49,7 +49,7 @@ export const TodoForm = (props: { todo: any; setTodo: any; todoList: any; setTod
                         <MenuItem value={'共通工数'}>共通</MenuItem>
                         <MenuItem value={'新規'}>新規</MenuItem>
                         <MenuItem value={'修正'}>修正</MenuItem>
-                        <MenuItem value={'製造間接工数'}>製造間接工数</MenuItem>
+                        <MenuItem value={'製造間接工数'}>製造間接</MenuItem>
                         <MenuItem value={'新規1'}>新規1</MenuItem>
                         <MenuItem value={'修正1'}>修正1</MenuItem>
                     </Select>
