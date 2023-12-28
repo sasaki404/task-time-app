@@ -10,19 +10,14 @@ function secondsToHMS(seconds: number): string {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const remainingSeconds = seconds % 60;
-
     let result = "";
-
     if (hours > 0) {
         result += hours + "h ";
     }
-
     if (minutes > 0 || hours > 0) {
         result += minutes + "m ";
     }
-
     result += remainingSeconds + "s";
-
     return result.trim();
 }
 
@@ -50,7 +45,7 @@ const Timer: React.FC<{ index: number; isRun: boolean; startDate: Date; timerLis
             );
         }, 1000);
         return () => clearInterval(id);
-    }, [index, isRun, startDate, setTimerList]);
+    }, [index, isRun, setTimerList]);
 
 
     return <p>計: {secondsToHMS(timerList[index])}</p>;
@@ -86,10 +81,8 @@ export const TodoList: React.FC<{ todoList: any; setTodoList: any; typeList: any
         <Container maxWidth='xs'>
             {
                 todoList.map((todo: any, index: any) => {
-                    // Update kosuTime correctly
                     kosuTime[typeList[index]] = (kosuTime[typeList[index]] || 0) + timeList[index];
                     total += timeList[index];
-                    // Use curly braces and return the JSX content
                     return (
                         <div key={index}>
                             {<Timer index={index} isRun={isTimerRunningList[index]} startDate={dateList[index]} timerList={timeList} setTimerList={setTimeList} />}
